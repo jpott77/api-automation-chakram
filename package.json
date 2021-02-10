@@ -1,0 +1,20 @@
+{
+  "name": "apiautomation",
+  "version": "1.0.0",
+  "description": "This is API Testing using chakram",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/api/**/*"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Julia Pottinger",
+  "license": "ISC",
+  "devDependencies": {
+    "chakram": "^1.5.0"
+  },
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
