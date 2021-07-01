@@ -3,7 +3,6 @@ const { expect } = chakram;
 
 const schema = require('./schema')
 const bookingSchema = require('./bookingSchema')
-let bookingId = 0
 
 describe('Full Booking Path', () => {
     it('verify multistep API workflow ', async () =>{
@@ -26,9 +25,7 @@ describe('Full Booking Path', () => {
         }
 
         let res = await chakram.post(url,body,options)
-
         let bookingId = res.body.bookingid
-
         expect(res).to.have.status(200)
         expect(res).to.have.schema(bookingSchema)
 
